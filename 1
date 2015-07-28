@@ -1,0 +1,17 @@
+require_relative 'account'
+
+acc1 = Account.new('Kuya',1000)
+acc2 = Account.new('Carlo',500)
+
+
+acc1.withdraw(300)
+acc1.status
+
+acc1.transfer(500,acc2)
+acc1.status
+acc2.status
+
+acc1 = Informtion.new('Toronto', 55)
+acc2 = Information.new('Sauga',77)
+acc1.detailed_info('Kuya')
+acc2.detailed_info('Carlo')
